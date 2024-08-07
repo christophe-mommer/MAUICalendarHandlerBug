@@ -1,16 +1,9 @@
-﻿using CalendarHandlerBug.CustomControls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MaPremiereApplicationMAUI.Toolbox.CustomControls.Handlers;
+﻿namespace CalendarHandlerBug.CustomControls.Handlers;
 
 public partial class CustomCalendarHandler
 {
     public CustomCalendarHandler(
-        IPropertyMapper mapper, 
+        IPropertyMapper mapper,
         CommandMapper? commandMapper = null) : base(mapper, commandMapper)
     {
     }

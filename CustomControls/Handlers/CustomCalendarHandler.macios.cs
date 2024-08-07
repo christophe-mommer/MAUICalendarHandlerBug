@@ -1,10 +1,9 @@
-﻿namespace MaPremiereApplicationMAUI.Toolbox.CustomControls.Handlers;
-
-using CalendarHandlerBug.CustomControls;
-using Foundation;
+﻿using Foundation;
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using UIKit;
+
+namespace CalendarHandlerBug.CustomControls.Handlers;
 
 public partial class CustomCalendarHandler : ViewHandler<ICalendar, UICalendarView>, IDisposable
 {

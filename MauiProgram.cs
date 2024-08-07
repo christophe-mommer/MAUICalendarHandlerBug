@@ -1,6 +1,6 @@
 ﻿using CalendarHandlerBug.CustomControls;
+using CalendarHandlerBug.CustomControls.Handlers;
 using CommunityToolkit.Maui;
-using MaPremiereApplicationMAUI.Toolbox.CustomControls.Handlers;
 using Microsoft.Extensions.Logging;
 
 namespace CalendarHandlerBug;
