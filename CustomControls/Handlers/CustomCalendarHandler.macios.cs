@@ -11,10 +11,14 @@ public partial class CustomCalendarHandler : ViewHandler<ICalendar, UICalendarVi
 
     protected override UICalendarView CreatePlatformView()
     {
-        var calendarView = new UICalendarView();
-        _calendarSelection = new UICalendarSelectionSingleDate(new CalendarSelectionSingleDateDelegate(VirtualView, calendarView));
-        calendarView.SelectionBehavior = _calendarSelection;
-        return calendarView;
+        return new UICalendarView();
+    }
+
+    protected override void ConnectHandler(UICalendarView platformView)
+    {
+        base.ConnectHandler(platformView);
+        _calendarSelection = new UICalendarSelectionSingleDate(new CalendarSelectionSingleDateDelegate(VirtualView, platformView));
+        platformView.SelectionBehavior = _calendarSelection;
     }
 
     static void MapSelectedDate(CustomCalendarHandler handler, ICalendar virtualView)
